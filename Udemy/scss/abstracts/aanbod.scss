@@ -37,10 +37,14 @@
             color: #6a6f73;
 
             &:hover{
-                color: black;
+                color: colors.$textcolor;
 
             }
 
+        }
+
+        &__active{
+            color: colors.$textcolor;
         }
     }
 

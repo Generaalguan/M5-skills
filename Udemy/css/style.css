@@ -160,7 +160,10 @@ body {
   color: #6a6f73;
 }
 .aanbod__list__p:hover {
-  color: black;
+  color: #080A0B;
+}
+.aanbod__list__active {
+  color: #080A0B;
 }
 .aanbod__beschrijving {
   padding: 2.4rem;
