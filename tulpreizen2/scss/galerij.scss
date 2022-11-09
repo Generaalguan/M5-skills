@@ -1,0 +1,70 @@
+@use 'colors';
+@use 'fonts';
+@use 'components';
+
+.galerij{
+    border-bottom: colors.$border-small;
+
+
+}
+
+.galerij__header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.galerij__h2{
+    @extend %h2;
+}
+
+.galerij__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galerij__listitem{
+    width: 25%;
+    height: 40rem;    
+    list-style: none;
+    position: relative;
+}
+
+
+
+.galerij__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galerij__listsection{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: colors.$gradient;
+    transform: scaleX(0);
+    transition:  0.8s;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galerij__listitem:hover > .galerij__listsection{
+    transform: scaleX(1);
+}
+
+.galerij__listitem:hover > .galerij__listsection >.btn{
+    opacity: 1;
+}
+
+.galerij__listsection > .btn{
+    @extend %btn;
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+}

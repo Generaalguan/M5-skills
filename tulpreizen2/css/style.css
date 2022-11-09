@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a, a:visited, a:link {
+  color: #eee;
+  text-decoration: none;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "lato", sans-serif;
+  background: #16213E;
+}
+
+.galerij__listsection > .btn, .header__button, .nav__button {
+  width: 11rem;
+  padding: 1rem;
+  font-size: 80%;
+  background: #E94560;
+  color: #eee;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.galerij__listsection > .btn:hover, .header__button:hover, .nav__button:hover {
+  background: #e01b3b;
+  transition: 0.2s;
+}
+
+.galerij__h2, .kenmerken__h2, .over__h2, .header__h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 380%;
+  color: #eee;
+}
+
+.over__p {
+  color: #eee;
+}
+
+.nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  min-height: 7rem;
+  align-items: center;
+  color: #eee;
+  background: rgba(20, 40, 80, 0.7);
+  padding: 2rem;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav__logo {
+  font-size: 250%;
+  border: 0.5rem solid #E94560;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  cursor: pointer;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+}
+
+.header__figure {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, rgba(22, 33, 63, 0.8), 80%, rgba(233, 69, 96, 0.5)), url("../img/molens.webp");
+  object-fit: contain;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.header__figure > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  color: #eee;
+  text-align: center;
+}
+
+.header__logo {
+  font-size: 250%;
+  border: 0.5rem solid #E94560;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.header__h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 500%;
+}
+
+.over {
+  padding: 4rem;
+  border-bottom: 0.2rem solid #E94560;
+}
+
+.over__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.over__columns {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.over__column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.over__p {
+  width: 55ch;
+}
+
+.over__figure {
+  position: relative;
+  height: 70rem;
+  width: 70rem;
+}
+
+.over__figure::after {
+  content: "";
+  background: linear-gradient(to bottom right, rgba(22, 33, 63, 0.8), 80%, rgba(233, 69, 96, 0.5));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.over__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kenmerken {
+  padding: 4rem;
+  border-bottom: 0.2rem solid #E94560;
+}
+
+.kenmerken__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  height: 20%;
+}
+
+.kenmerken__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.kenmerken__listitem {
+  list-style: none;
+  color: white;
+  width: calc(50% - 8rem);
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.kenmerken__p {
+  width: 30ch;
+  text-align: center;
+}
+
+.kenmerken__icon {
+  font-size: 180%;
+  border: 0.1rem solid #E94560;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.galerij {
+  border-bottom: 0.2rem solid #E94560;
+}
+
+.galerij__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+}
+
+.galerij__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galerij__listitem {
+  width: 25%;
+  height: 40rem;
+  list-style: none;
+  position: relative;
+}
+
+.galerij__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.galerij__listsection {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom right, rgba(22, 33, 63, 0.8), 80%, rgba(233, 69, 96, 0.5));
+  transform: scaleX(0);
+  transition: 0.8s;
+  transform-origin: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galerij__listitem:hover > .galerij__listsection {
+  transform: scaleX(1);
+}
+
+.galerij__listitem:hover > .galerij__listsection > .btn {
+  opacity: 1;
+}
+
+.galerij__listsection > .btn {
+  opacity: 0;
+  transition-delay: 0.8s;
+  transition-duration: 0.2s;
+}
+
+.footer {
+  height: 20vh;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  border-bottom: 0.2rem solid #E94560;
+  width: 100%;
+}
+
+.footer__list {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.footer__listitem {
+  list-style: none;
+  color: white;
+  width: calc(50% - 8rem);
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__icon {
+  font-size: 180%;
+  border: 0.1rem solid #E94560;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 75rem) {
+  body {
+    font-size: 1.6rem;
+  }
+  .header {
+    min-height: 140rem;
+  }
+  .over {
+    height: 120rem;
+  }
+  .over__header {
+    height: 20%;
+  }
+  .over__columns {
+    flex-direction: column;
+    height: 80%;
+  }
+  .over__column {
+    height: 50%;
+  }
+  .over__p {
+    width: 100%;
+    height: 100%;
+  }
+  .over__figure {
+    position: relative;
+    height: 40%;
+    width: 100%;
+  }
+  .kenmerken {
+    min-height: 120rem;
+    padding: 0;
+  }
+  .kenmerken__listitem {
+    width: 100%;
+  }
+  .galerij {
+    height: auto;
+  }
+  .galerij__list {
+    flex-wrap: wrap;
+  }
+  .galerij__listitem {
+    width: 100%;
+    height: 20rem;
+  }
+  .galerij__listitem:hover > .galerij__listsection {
+    transform: scaleX(0);
+  }
+  .galerij__listitem:hover > .galerij__listsection > .btn {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 50rem) {
+  .nav__list {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

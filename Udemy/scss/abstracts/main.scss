@@ -1,0 +1,12 @@
+@use '../components/colors.scss';
+@use'../components/font.scss';
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.4rem;
+
+
+}

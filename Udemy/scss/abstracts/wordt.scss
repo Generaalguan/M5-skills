@@ -1,0 +1,45 @@
+@use '../components/colors.scss';
+@use'../components/font.scss';
+@use '../components/mixins.scss';
+
+.wordt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    &__figure{
+        width: 40rem;
+    }
+
+    &__figure--1{
+
+        &__img{
+            max-width: 100%;
+        }
+    }
+
+    &__figure--2{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 4%;
+        padding-left: 2.4rem;
+        padding-top: 2.4rem;
+
+        &__h2{
+            font-family: font.$playfare;
+        }
+
+        &__btn{
+            @include mixins.black-button;
+            font-size: 100%;
+            &:hover{
+                @include mixins.black-button_animation;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+}

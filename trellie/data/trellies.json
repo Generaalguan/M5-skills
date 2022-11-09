@@ -1,0 +1,35 @@
+{
+    "title": "Todo",
+    "activities": [
+        {
+            "description": "eyo the pizza here",
+            "label": "vandaag",
+            "extraClass": "none",
+            "author": "BK"
+        },
+        {
+            "description": "what's 9 + 10",
+            "label": "morgen",
+            "extraClass": "morgen",
+            "author": "BK"
+        },
+        {
+            "description": "what the dog doing",
+            "label": "overmorgen",
+            "extraClass": "weekend",
+            "author": "BK"
+        },
+        {
+            "description": "only a spoonfull",
+            "label": "deze week",
+            "extraClass": "deze_week",
+            "author": "BK"
+        },
+        {
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ullam? Deserunt, obcaecati possimus? Magni eveniet doloremque at culpa perspiciatis, necessitatibus vitae eligendi cumque libero ducimus soluta pariatur odit ex. Ab?",
+            "label": "volgende week",
+            "extraClass": "volgende_week",
+            "author": "BK"
+        }
+    ]
+}

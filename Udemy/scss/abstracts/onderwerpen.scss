@@ -1,0 +1,75 @@
+@use '../components/colors.scss';
+@use'../components/font.scss';
+@use '../components/mixins.scss';
+
+.onderwerpen{
+    width: 100%;
+    background: colors.$grayblue;
+    display: flex;
+    justify-content: center;
+    padding: 2.4rem;
+
+
+    &__figure{
+        width: 100%;
+        padding: 0 2.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+    }
+
+    &__h2{
+        font-size: 115%;
+        padding-bottom: 2.4rem;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+
+
+        &__item{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+
+        }
+
+        &__h3{
+            font-size: 100%;
+            font-weight: 500;
+            padding-bottom: 2rem;
+        }
+
+        &__link{
+            font-family: font.$robotto;
+            font-weight: 700;
+            color:#7743DB;
+
+            &:hover{
+                color: darken(#7743DB, 20%);
+            }
+            
+        }
+
+        &__small{
+            font-weight: 300;
+            font-size: 2rem;
+        }
+    }
+    &__btn{
+        @include mixins.black-border;
+        cursor: pointer;
+        
+        &:hover{
+            @include mixins.black-border_animation
+        }
+    }
+}

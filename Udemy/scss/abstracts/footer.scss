@@ -1,0 +1,58 @@
+@use '../components/colors.scss';
+@use'../components/font.scss';
+
+.footer{
+    width: 100%;
+    background: colors.$textcolor;
+
+    &__top{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.4rem;
+        
+        &__text{
+            display: flex;
+            flex-direction:column;
+            width: 20%;
+        }
+        &__link{
+            color: colors.$white;
+            font-size: 80%;
+            font-weight: 300;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        &__btn{
+            width: max-content;
+            height: max-content;
+            padding: 1rem;
+            background: none;
+            color: colors.$white;
+            border: 0.2rem solid colors.$white;
+        }
+    }
+
+    &__bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.4rem;
+        align-items: center;
+
+        &__logo{
+            max-height: 5rem;
+        }
+
+        &__small{
+            color:colors.$white ;
+        }
+    }
+}
+
+

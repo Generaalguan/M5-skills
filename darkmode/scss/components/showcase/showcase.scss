@@ -1,0 +1,76 @@
+@use "../../variables/colors";
+@use "../../variables/mixins";
+
+:root{
+    --background-color: #fbf8f1;
+    --header--color: #fbf8f1;
+    --font--color:black;
+}
+
+.showcase{
+    width: 80vw;
+    height: 80rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4rem;
+    background: var(--background-color);
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    color: var(--font--color) ;
+
+    &__input{
+        font-size: 100%;
+        padding: 2rem;
+        padding-left: 0;
+        width: 50%;
+        background: none;
+        border: none;
+        border-bottom: 0.3rem solid #54bab9;
+        outline: none;
+        
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__wrapper{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+
+    &__font{
+        font-size: 120%;
+        font-weight: 500;
+    }
+
+
+
+    &__output{
+        font-size: 250%;
+
+        &--cursive{
+            @include mixins.fontcursive;
+
+        }
+
+        &--serif{
+            @include mixins.fontserif;
+
+
+        }
+
+        &--sansserif{
+            @include mixins.fontsansserif;
+        }
+
+    }
+
+
+
+}

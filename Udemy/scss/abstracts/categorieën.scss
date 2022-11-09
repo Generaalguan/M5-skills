@@ -1,0 +1,42 @@
+@use '../components/colors.scss';
+@use'../components/font.scss';
+
+
+.categorieën{
+    width: 100%;
+    padding: 0 2.4rem;
+
+    &__h2{
+        font-size: 115%;
+        padding-bottom: 2.4rem;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+
+    }
+
+    &__holder{
+        width: 20rem;
+        cursor: pointer;
+    }
+
+
+    &__img{
+        max-width: 20rem;
+        max-height: 16rem;
+    }
+
+    &__h3{
+        font-size: 90%;
+        font-weight: 400;
+    }
+
+
+    
+
+}

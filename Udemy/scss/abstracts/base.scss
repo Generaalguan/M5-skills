@@ -1,0 +1,15 @@
+@use '../components/colors.scss';
+@use'../components/font.scss';
+
+body{
+    height: 100vh;
+    font-size: 2rem;
+    font-family: font.$robotto;
+    color: colors.$textcolor;
+    overflow-x: hidden;
+}
+
+.links{
+    color: colors.$textcolor;
+    text-decoration: none;
+}
