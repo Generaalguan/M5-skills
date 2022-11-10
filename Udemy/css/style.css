@@ -375,9 +375,11 @@ body {
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 .vertrouwd__list__img {
-  width: 10rem;
+  width: 13rem;
+  height: 5rem;
   object-fit: cover;
 }
 
@@ -433,6 +435,10 @@ body {
   .onderwerpen__list {
     flex-wrap: wrap;
     gap: 4rem;
+    justify-content: center;
+  }
+  .onderwerpen__container {
+    align-items: center;
   }
 }
 @media screen and (max-width: 64.375rem) {
@@ -481,6 +487,23 @@ body {
     align-items: center;
     height: none;
   }
+  .aanbod__list {
+    gap: 1rem;
+  }
+  .categorieën {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .categorieën__container {
+    justify-content: center;
+  }
+  .categorieën__holder {
+    width: 25rem;
+  }
+  .categorieën__img {
+    min-width: 25rem;
+  }
 }
 @media screen and (max-width: 59.5625rem) {
   .intro__div {
@@ -495,6 +518,9 @@ body {
   }
   .footer__bottom {
     flex-wrap: wrap;
+  }
+  .onderwerpen__figure {
+    align-items: center;
   }
 }
 

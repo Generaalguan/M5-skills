@@ -19,9 +19,11 @@
         width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
 
         &__img {
-            width: 10rem;
+            width: 13rem;
+            height: 5rem;
             object-fit: cover;
         }
 

@@ -1,10 +1,16 @@
 @media screen and (max-width:75rem){
+
+    
     .onderwerpen__list{
         flex-wrap: wrap;
         gap: 4rem;
+        justify-content: center;
+    }
+
+    .onderwerpen__container{
+        align-items: center;
     }
 }
-
 @media screen and (max-width:64.375rem){
     .header__hamburger{
         display: block;
@@ -60,6 +66,30 @@
         }
     }
 
+    .aanbod__list{
+        gap: 1rem;
+    }
+
+
+
+    .categorieën{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__container{
+            justify-content: center;
+        }
+
+        &__holder{
+            width: 25rem;
+        }
+
+        &__img{
+            min-width: 25rem;
+        }
+    }
+
 
 
     
@@ -81,5 +111,9 @@
 
     .footer__bottom{
         flex-wrap: wrap;
+    }
+
+    .onderwerpen__figure{
+        align-items: center;
     }
 }
